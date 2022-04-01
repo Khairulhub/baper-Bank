@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>banking website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <h1 class="text-5xl text-center mt-6 font-semibold">Lets get some <span class="text-fuchsia-600">Mooooney</span>!!</h1>
+    </header>
+    <main>
+        <section class="w-3/4 mx-auto">
+            <div class="grid grid-cols-3 gap-4 mt-8">
+                <div class="bg-blue-100 p-8">
+                    <h2 class="text-2xl">Deposit</h2>
+                    <h3 class="text-4xl">$<span id="deposit-total">00</span></h3>
+                </div>
+                <div class="bg-green-100 p-8">
+                    <h2 class="text-2xl">Withdrow</h2>
+                    <h3 class="text-4xl">$<span id="withdrow-total">00</span></h3>
+                </div>
+                <div class="bg-yellow-100 p-8">
+                    <h2 class="text-2xl">Balance</h2>
+                    <h3 class="text-4xl">$<span id="balance-total">1200</span></h3>
+                </div>
+            </div>
+             <!-- deposit and withdrow -->
+             <div class="grid grid-cols-2  gap-4 mt-4">
+
+                <div  class="text-2xl bg-red-100 p-8 ">
+                    <h2 class="text-3xl">Please Deposit!!</h2>
+                    <div>
+                        <Input id="deposit-input" class=" p-2 border rounded block w-3/4" type="text" placeholder="$ amount you want to deposit"></Input>
+                    
+                    <button id="deposit-btn" class="bg-yellow-300 px-4 py-2 rounded mt-2">Deposit</button>
+                    </div>
+                    
+                </div>
+                <div  class="text-2xl bg-purple-100 p-8 ">
+                    <h2 class="text-3xl">Please Withdrow!!</h2>
+                    <div>
+                        <Input id="withdrow-input" class=" p-2 border rounded block w-3/4" type="text" placeholder="$ amount you want to withdrow"></Input>
+                    
+                    <button id="withdrow-btn" class="bg-yellow-300 px-4 py-2 rounded mt-2">Withdrow</button>
+                    </div>
+                    
+                </div>
+            </div>
+           
+        </section>
+    </main>
+    <script src="../js/banking.js"></script>
+</body>
+</html>
