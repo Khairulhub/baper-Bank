@@ -10,6 +10,6 @@ document.getElementById('login-btn').addEventListener('click',function(){
     // check user valed or not
 
     if(userEmail == 'sontan@bap.com' && userPassword == 'khairul'){
-        window.location.href = '../js/banking.html';
+            location.href = '../js/banking.html';g
     }
 })
